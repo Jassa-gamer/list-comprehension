@@ -1,0 +1,17 @@
+# Let’s say I give you a list saved in a variable: a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]. Write one line of
+# Python that takes this list a and makes a new list that has only the even elements of this list in it.
+
+a = [12, 1, 4, 5, 4, 12, 2, 6, 72, 35445, 4523, 43, 54, 2134, 4321, 342, 543, 53, 56, 7, 78]
+list1 = []
+for i in a:
+    if i % 2 == 0:
+        list1.append(i)
+    else:
+        continue
+print("\n", list1)
+
+"""
+a = [21, 21, 23, 324, 54, 65, 32, 21, 1, 12, 1, 3, 4, 21, 6, 7, 3, 353, 53, 35, 48]
+b = [i for i in a if i % 2 == 0]                    
+print(b)                                        # This is the easy way of doing the same thing.
+"""
